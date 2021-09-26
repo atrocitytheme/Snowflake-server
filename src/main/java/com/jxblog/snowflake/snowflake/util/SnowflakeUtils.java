@@ -4,6 +4,9 @@ import com.jxblog.snowflake.snowflake.snowflake.SnowInformation;
 import com.jxblog.snowflake.snowflake.snowflake.Snowflake;
 
 public class SnowflakeUtils {
+    /**
+     * get the snowflake information from the snowId generated
+     * */
     public static SnowInformation parse(long snowId) {
         long timestampShift = Snowflake.DATA_CENTER_BITS + Snowflake.SEQUENCE_BITS + Snowflake.WORKER_ID_BITS;
         long dataCenterShift = timestampShift - Snowflake.DATA_CENTER_BITS;

@@ -19,4 +19,5 @@ public class SnowResponse {
     private long snowflakeId;
     private Date createdDate;
     private String errorMsg;
+    private String description;
 }
